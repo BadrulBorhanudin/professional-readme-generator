@@ -1,4 +1,4 @@
-# 09 Node.js Challenge: Professional README Generator
+# 09 Node.js: Professional README Generator
 
 ## Module 09 Challenge
 This challenge is different from the previous challenges. It won't be deployed and I won't be given any starter code. Instead, I'll have to create the application from scratch!

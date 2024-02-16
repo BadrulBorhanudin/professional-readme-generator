@@ -120,7 +120,7 @@ inquirer
     .then((answers) => {
         const readmeFileContent = generateMarkdown(answers);
     
-        fs.writeFile('README.md', readmeFileContent, (err) =>
+        fs.writeFile('./sample/README.md', readmeFileContent, (err) =>
           err ? console.log(err) : console.log('Successfully created README.md!')
         );
       });

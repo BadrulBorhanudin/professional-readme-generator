@@ -41,7 +41,7 @@ ${description}
 - [Installations](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contribution)
+- [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
 
@@ -120,7 +120,7 @@ inquirer
     .then((answers) => {
         const readmeFileContent = generateMarkdown(answers);
     
-        fs.writeFile('./generatedReadme/README.md', readmeFileContent, (err) =>
+        fs.writeFile('README.md', readmeFileContent, (err) =>
           err ? console.log(err) : console.log('Successfully created README.md!')
         );
       });

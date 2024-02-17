@@ -59,6 +59,12 @@ Here are some guidelines to use the application:
 
 * Once finished answering the questions, the generated README.md file will be in a Sample folder inside the repo.
 
+## Preview
+
+The following animation demonstrates how to use the application:
+
+![A user downloads the repo and npm install inquirer to use the application then answers the questions to generate a readme file.](./Assets/04-web-apis-homework-demo.gif)
+
 
 ## Notes
 

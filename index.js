@@ -4,34 +4,33 @@ const fs = require('fs');
 const generateMarkdown = (data) => {
     const { title, description, installation, usage, license, contribution, tests, email, username } = data;
 
-    const renderLicenseBadge = (license) => {
+    const renderLicenseBadgeAndLink = (license) => {
         if (license) {
             switch (license) {
                 case 'MIT':
-                    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+                    return {
+                        badge: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+                        link: 'This application is covered under the [MIT license.](https://opensource.org/licenses/MIT)'
+                    };
                 case 'Apache 2.0':
-                    return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+                    return {
+                        badge: '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)',
+                        link: 'This application is covered under the [Apache 2.0.](https://opensource.org/licenses/Apache-2.0)'
+                    };
                 case 'GPL 3.0':
-                    return '[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
+                    return {
+                        badge: '[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)',
+                        link: 'This application is covered under the [GPL 3.0 license.](https://www.gnu.org/licenses/gpl-3.0)'
+                    };
                 default:
-                    return '';
+                    return { badge: '', link: '' };
             }
         } else {
-            return '';
+            return { badge: '', link: '' };
         }
     };
 
-    const renderLicenseLink = (license) => {
-        if (license) {
-            return `## License\n\nThis application is covered under the ${license} license.`;
-        } else {
-            return '';
-        }
-    };
-
-    return `
-    
-## Title
+    return `## Title
 ${title}
 
 ## Description
@@ -52,8 +51,8 @@ ${installation}
 ${usage}
 
 ## License
-${renderLicenseBadge(license)}
-${renderLicenseLink(license)}
+${renderLicenseBadgeAndLink(license).badge}  
+${renderLicenseBadgeAndLink(license).link}
 
 ## Contributing
 ${contribution}
@@ -103,7 +102,7 @@ inquirer
             type: 'list',
             name: 'license',
             message: 'Select License',
-            choices: ['MIT', 'Apache 2.0', 'GNU GPLv3', 'ISC', 'None']
+            choices: ['MIT', 'Apache 2.0', 'GPL 3.0', 'None']
         },
         {
             type: 'input',

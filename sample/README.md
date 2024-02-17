@@ -1,5 +1,3 @@
-
-    
 ## Title
 README Generator
 
@@ -21,10 +19,8 @@ Firstly, install Node JS and then inquirer package.
 Use as described in License Terms and Conditions.
 
 ## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## License
-
-This application is covered under the MIT license.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+This application is covered under the [MIT license.](https://opensource.org/licenses/MIT)
 
 ## Contributing
 Give credit to Badrul Borhanudin.

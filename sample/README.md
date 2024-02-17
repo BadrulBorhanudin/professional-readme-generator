@@ -1,5 +1,5 @@
 ## Title
-README Generator
+Professional README Generator
 
 ## Description
 This application will generate a readme file tailored on user's response.

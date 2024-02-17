@@ -68,7 +68,7 @@ The following animation demonstrates how to use the application:
 
 ## Notes
 
-* [Click here for the walkthrough video demonstrating the functionality of the application.](https://badrulborhanudin.github.io/readme-generator)
+* [Click here for the walkthrough video demonstrating the functionality of the application.](https://drive.google.com/file/d/10pQBhXEU9X4xLrKaprLgvz3zjAMA7Y7T/view?usp=sharing)
 
 * [Click here for the URL of the GitHub repository, with a unique name and a README that describes this project.](https://github.com/BadrulBorhanudin/readme-generator)
 
